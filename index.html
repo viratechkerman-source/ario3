@@ -3,152 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>آریوتک - خدمات هیز صنعت</title>
+    <title>شرکت سهامی خاص آریو تجهیز صنعت</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Vazir:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div id="loader" class="loader">
-        <div class="loading-3d">
-            <div class="cube">
-                <div class="face front"></div>
-                <div class="face back"></div>
-                <div class="face right"></div>
-                <div class="face left"></div>
-                <div class="face top"></div>
-                <div class="face bottom"></div>
+    <!-- Navigation -->
+    <nav class="navbar glass-card">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-3d">
+                    <i class="fas fa-industry"></i>
+                </div>
+                <span>آریو تجهیز صنعت</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">خانه</a>
+                <a href="#about" class="nav-link">درباره ما</a>
+                <a href="#products" class="nav-link">محصولات</a>
+                <a href="#services" class="nav-link">خدمات</a>
+                <a href="#contact" class="nav-link">تماس</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-        <h3>در حال بارگذاری...</h3>
-    </div>
-
-    <!-- Header -->
-    <header class="glass-header">
-        <nav class="navbar">
-            <div class="nav-brand">
-                <div class="logo-3d">
-                    <i class="fas fa-atom"></i>
-                    <span>آریوتک</span>
-                </div>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">خانه</a></li>
-                <li><a href="#about" class="nav-link">درباره ما</a></li>
-                <li><a href="#products" class="nav-link">محصولات</a></li>
-                <li><a href="#services" class="nav-link">خدمات</a></li>
-                <li><a href="#contact" class="nav-link">تماس</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
+    </nav>
 
     <!-- Hero Section with Slider -->
-    <section id="home" class="hero-section">
+    <section id="home" class="hero">
         <div class="hero-slider">
-            <div class="slide active" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+            <div class="slide active" style="background: linear-gradient(135deg, rgba(139, 69, 196, 0.1), rgba(59, 130, 246, 0.1));">
                 <div class="slide-content">
-                    <div class="hero-3d-element"></div>
-                    <h1 class="hero-title">خدمات پیشرفته هیز صنعت</h1>
-                    <p class="hero-subtitle">ما با تکنولوژی روز دنیا، بهترین خدمات صنعتی را ارائه می‌دهیم</p>
-                    <div class="hero-buttons">
-                        <button class="btn-3d primary">مشاهده محصولات</button>
-                        <button class="btn-3d secondary">تماس با ما</button>
+                    <div class="floating-shapes">
+                        <div class="shape-3d cube"></div>
+                        <div class="shape-3d sphere"></div>
+                        <div class="shape-3d pyramid"></div>
                     </div>
+                    <h1 class="hero-title">شرکت سهامی خاص آریو تجهیز صنعت</h1>
+                    <p class="hero-subtitle">تامین کننده ابزار دقیق، تجهیزات مکانیک، الکتریک، الکترونیک</p>
+                    <div class="hero-stats glass-card">
+                        <div class="stat">
+                            <span class="stat-number">1399</span>
+                            <span class="stat-label">سال تأسیس</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">پروژه موفق</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">شرکت همکار</span>
+                        </div>
+                    </div>
+                    <button class="cta-btn">مشاهده محصولات</button>
                 </div>
             </div>
-            <div class="slide" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+            
+            <div class="slide" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(245, 101, 101, 0.1));">
                 <div class="slide-content">
-                    <div class="hero-3d-element gear"></div>
-                    <h1 class="hero-title">تجهیزات پیشرفته صنعتی</h1>
-                    <p class="hero-subtitle">محصولات با کیفیت بالا و گارانتی معتبر</p>
-                    <div class="hero-buttons">
-                        <button class="btn-3d primary">کاتالوگ محصولات</button>
-                        <button class="btn-3d secondary">درخواست قیمت</button>
+                    <div class="floating-shapes">
+                        <div class="shape-3d gear rotating"></div>
+                        <div class="shape-3d cylinder"></div>
                     </div>
+                    <h1 class="hero-title">همکاری با بزرگترین شرکت‌ها</h1>
+                    <p class="hero-subtitle">افتخار همکاری با فولاد زرند ایرانیان، فولاد سیرجان، شرکت ذغالسنگ و ملی صنایع مس</p>
+                    <div class="partner-logos glass-card">
+                        <div class="partner-item">
+                            <i class="fas fa-industry"></i>
+                            <span>فولاد زرند ایرانیان</span>
+                        </div>
+                        <div class="partner-item">
+                            <i class="fas fa-fire"></i>
+                            <span>فولاد سیرجان</span>
+                        </div>
+                        <div class="partner-item">
+                            <i class="fas fa-mountain"></i>
+                            <span>ذغالسنگ</span>
+                        </div>
+                        <div class="partner-item">
+                            <i class="fas fa-gem"></i>
+                            <span>ملی صنایع مس</span>
+                        </div>
+                    </div>
+                    <button class="cta-btn">درباره ما</button>
                 </div>
             </div>
-            <div class="slide" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+            
+            <div class="slide" style="background: linear-gradient(135deg, rgba(249, 115, 22, 0.1), rgba(168, 85, 247, 0.1));">
                 <div class="slide-content">
-                    <div class="hero-3d-element molecule"></div>
-                    <h1 class="hero-title">نوآوری در خدمات</h1>
-                    <p class="hero-subtitle">با تیم متخصص و تجربه چندین ساله در خدمت شما</p>
-                    <div class="hero-buttons">
-                        <button class="btn-3d primary">خدمات ما</button>
-                        <button class="btn-3d secondary">مشاوره رایگان</button>
+                    <div class="floating-shapes">
+                        <div class="shape-3d hexagon"></div>
+                        <div class="shape-3d torus"></div>
                     </div>
+                    <h1 class="hero-title">خدمات تخصصی و کامل</h1>
+                    <p class="hero-subtitle">از طراحی تا اجرا، از واردات تا خدمات پس از فروش</p>
+                    <div class="services-preview glass-card">
+                        <div class="service-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>طراحی و مهندسی</span>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>واردات و صادرات</span>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-tools"></i>
+                            <span>نصب و راه‌اندازی</span>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-headset"></i>
+                            <span>پشتیبانی 24/7</span>
+                        </div>
+                    </div>
+                    <button class="cta-btn">تماس با ما</button>
                 </div>
             </div>
         </div>
-        <div class="slider-controls">
-            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
-            <div class="slide-indicators">
-                <span class="indicator active" data-slide="0"></span>
-                <span class="indicator" data-slide="1"></span>
-                <span class="indicator" data-slide="2"></span>
-            </div>
-            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+        
+        <!-- Slider Controls -->
+        <div class="slider-nav">
+            <button class="slider-btn prev-btn" onclick="previousSlide()">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <button class="slider-btn next-btn" onclick="nextSlide()">
+                <i class="fas fa-chevron-left"></i>
+            </button>
         </div>
-        <div class="floating-elements">
-            <div class="floating-element"></div>
-            <div class="floating-element"></div>
-            <div class="floating-element"></div>
+        
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about-section">
+    <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">درباره آریوتک</h2>
-                <p class="section-subtitle">شرکت پیشرو در ارائه خدمات هیز صنعتی</p>
+                <h2 class="section-title">درباره شرکت آریو تجهیز صنعت</h2>
+                <p class="section-subtitle">تخصص، تجربه و اعتماد در خدمت صنعت کشور</p>
             </div>
+            
             <div class="about-content">
                 <div class="about-text glass-card">
-                    <h3>تجربه و تخصص</h3>
-                    <p>آریوتک با بیش از یک دهه تجربه در زمینه خدمات هیز صنعت، یکی از معتبرترین شرکت‌های این حوزه محسوب می‌شود. ما با ارائه جدیدترین تکنولوژی‌ها و روش‌های نوین، به مشتریان خود خدمات با کیفیت ارائه می‌دهیم.</p>
-                    <div class="features-list">
+                    <p>
+                        شرکت آریوتجهیز صنعت در سال 1399 با کادری مجرب و جوان به صورت تخصصی در زمینه کلیه امور بازرگانی اعم از خرید و فروش، واردات و صادرات کلیه کالاهای مجاز بازرگانی و انتقال تکنولوژی از خارج به داخل کشور، ترخیص کالا از گمرک داخلی و بین المللی، گشایش اعتبارات بانکی به صورت ارزی و ریالی از کلیه بانک‌ها، موسسات داخلی و خارجی فعالیت خود را آغاز کرد.
+                    </p>
+                    <div class="about-features">
                         <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>تضمین کیفیت محصولات</span>
+                            <i class="fas fa-award"></i>
+                            <span>تجربه بیش از 4 سال</span>
                         </div>
                         <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>پشتیبانی 24 ساعته</span>
+                            <i class="fas fa-users"></i>
+                            <span>تیم متخصص و با تجربه</span>
                         </div>
                         <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>تیم متخصص و مجرب</span>
+                            <i class="fas fa-globe"></i>
+                            <span>شبکه بین‌المللی تأمین</span>
                         </div>
                         <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>قیمت‌های رقابتی</span>
+                            <i class="fas fa-certificate"></i>
+                            <span>کیفیت تضمین شده</span>
                         </div>
                     </div>
                 </div>
-                <div class="about-visual">
-                    <div class="stats-card glass-card">
-                        <div class="stat-item">
-                            <div class="stat-number" data-count="1000">0</div>
-                            <div class="stat-label">پروژه موفق</div>
+                
+                <div class="services-grid">
+                    <div class="service-card glass-card">
+                        <div class="service-icon">
+                            <i class="fas fa-cogs"></i>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number" data-count="500">0</div>
-                            <div class="stat-label">مشتری راضی</div>
+                        <h3>تجهیزات مکانیکی</h3>
+                        <p>بیرینگ‌ها، پمپ‌های هیدرولیک، جک‌های هیدرولیکی، مبدل‌های حرارتی و کوپلینگ‌ها</p>
+                    </div>
+                    
+                    <div class="service-card glass-card">
+                        <div class="service-icon">
+                            <i class="fas fa-bolt"></i>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number" data-count="15">0</div>
-                            <div class="stat-label">سال تجربه</div>
+                        <h3>تجهیزات برقی</h3>
+                        <p>الکترو موتورها، کنتاکتورها، کارت‌های الکترونیکی، ویبرومتر و سنسورها</p>
+                    </div>
+                    
+                    <div class="service-card glass-card">
+                        <div class="service-icon">
+                            <i class="fas fa-ruler-combined"></i>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number" data-count="50">0</div>
-                            <div class="stat-label">کارشناس متخصص</div>
+                        <h3>ابزار دقیق</h3>
+                        <p>حرارت‌سنج‌ها، فشارسنج‌ها، سطح‌سنج‌ها، شیرهای کنترلی و ترانسمیترها</p>
+                    </div>
+                    
+                    <div class="service-card glass-card">
+                        <div class="service-icon">
+                            <i class="fas fa-flask"></i>
                         </div>
+                        <h3>تجهیزات آزمایشگاهی</h3>
+                        <p>اسپکتروفتومتر، کدورت‌سنج، BOD متر، راکتور COD، pH متر و EC متر</p>
                     </div>
                 </div>
             </div>
@@ -156,147 +212,509 @@
     </section>
 
     <!-- Products Section -->
-    <section id="products" class="products-section">
+    <section id="products" class="products">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">محصولات ما</h2>
-                <p class="section-subtitle">مجموعه کاملی از تجهیزات و قطعات صنعتی</p>
+                <p class="section-subtitle">بیش از 50 محصول با کیفیت برای صنایع مختلف</p>
             </div>
+            
+            <!-- Product Filters -->
             <div class="product-filters">
                 <button class="filter-btn active" data-filter="all">همه محصولات</button>
-                <button class="filter-btn" data-filter="heaters">هیترها</button>
-                <button class="filter-btn" data-filter="sensors">سنسورها</button>
-                <button class="filter-btn" data-filter="controllers">کنترلرها</button>
-                <button class="filter-btn" data-filter="parts">قطعات</button>
+                <button class="filter-btn" data-filter="mechanical">تجهیزات مکانیکی</button>
+                <button class="filter-btn" data-filter="electrical">تجهیزات برقی</button>
+                <button class="filter-btn" data-filter="instruments">ابزار دقیق</button>
+                <button class="filter-btn" data-filter="laboratory">تجهیزات آزمایشگاهی</button>
             </div>
-            <div class="products-grid">
-                <div class="product-card glass-card" data-category="heaters">
+            
+            <!-- Products Grid -->
+            <div class="products-grid" id="products-grid">
+                <!-- محصولات مکانیکی -->
+                <div class="product-card glass-card" data-category="mechanical">
                     <div class="product-image">
-                        <div class="product-3d-icon">
-                            <i class="fas fa-fire"></i>
-                        </div>
+                        <i class="fas fa-circle-dot"></i>
                     </div>
-                    <div class="product-info">
-                        <h3 class="product-title">هیتر صنعتی</h3>
-                        <p class="product-description">هیتر با کیفیت بالا مناسب برای کاربردهای صنعتی</p>
-                        <div class="product-price">قیمت: تماس بگیرید</div>
-                        <button class="product-btn">جزئیات بیشتر</button>
+                    <h3>بیرینگ های غلتکی</h3>
+                    <p>تامین و تعمیر انواع بیرینگ های صنعتی با کیفیت بالا</p>
+                    <div class="product-features">
+                        <span>کیفیت برتر</span>
+                        <span>گارانتی معتبر</span>
                     </div>
+                    <button class="product-btn">جزئیات محصول</button>
                 </div>
-                <div class="product-card glass-card" data-category="sensors">
+                
+                <div class="product-card glass-card" data-category="mechanical">
                     <div class="product-image">
-                        <div class="product-3d-icon">
-                            <i class="fas fa-thermometer-half"></i>
-                        </div>
+                        <i class="fas fa-tint"></i>
                     </div>
-                    <div class="product-info">
-                        <h3 class="product-title">سنسور دما</h3>
-                        <p class="product-description">سنسورهای دقیق و قابل اعتماد</p>
-                        <div class="product-price">قیمت: تماس بگیرید</div>
-                        <button class="product-btn">جزئیات بیشتر</button>
+                    <h3>پمپ های هیدرولیک</h3>
+                    <p>پمپ های هیدرولیک و لوازم یدکی با کیفیت اروپایی</p>
+                    <div class="product-features">
+                        <span>فشار بالا</span>
+                        <span>دوام عالی</span>
                     </div>
+                    <button class="product-btn">جزئیات محصول</button>
                 </div>
-                <div class="product-card glass-card" data-category="controllers">
+                
+                <div class="product-card glass-card" data-category="mechanical">
                     <div class="product-image">
-                        <div class="product-3d-icon">
-                            <i class="fas fa-microchip"></i>
-                        </div>
+                        <i class="fas fa-cog"></i>
                     </div>
-                    <div class="product-info">
-                        <h3 class="product-title">کنترلر صنعتی</h3>
-                        <p class="product-description">سیستم‌های کنترل هوشمند</p>
-                        <div class="product-price">قیمت: تماس بگیرید</div>
-                        <button class="product-btn">جزئیات بیشتر</button>
+                    <h3>موتورهای هیدرولیک</h3>
+                    <p>موتورهای هیدرولیک و قطعات جانبی</p>
+                    <div class="product-features">
+                        <span>راندمان بالا</span>
+                        <span>کم صدا</span>
                     </div>
+                    <button class="product-btn">جزئیات محصول</button>
                 </div>
-                <div class="product-card glass-card" data-category="parts">
+                
+                <div class="product-card glass-card" data-category="mechanical">
                     <div class="product-image">
-                        <div class="product-3d-icon">
-                            <i class="fas fa-cog"></i>
-                        </div>
+                        <i class="fas fa-fan"></i>
                     </div>
-                    <div class="product-info">
-                        <h3 class="product-title">قطعات یدکی</h3>
-                        <p class="product-description">قطعات اصل و با ضمانت</p>
-                        <div class="product-price">قیمت: تماس بگیرید</div>
-                        <button class="product-btn">جزئیات بیشتر</button>
+                    <h3>فن های صنعتی</h3>
+                    <p>انواع فن های صنعتی و تهویه با کیفیت بالا</p>
+                    <div class="product-features">
+                        <span>کارآیی بالا</span>
+                        <span>مقاوم</span>
                     </div>
+                    <button class="product-btn">جزئیات محصول</button>
                 </div>
-                <div class="product-card glass-card" data-category="heaters">
+                
+                <div class="product-card glass-card" data-category="mechanical">
                     <div class="product-image">
-                        <div class="product-3d-icon">
-                            <i class="fas fa-burn"></i>
-                        </div>
+                        <i class="fas fa-arrows-alt-v"></i>
                     </div>
-                    <div class="product-info">
-                        <h3 class="product-title">هیتر کارتریجی</h3>
-                        <p class="product-description">هیترهای کارتریجی با کیفیت بالا</p>
-                        <div class="product-price">قیمت: تماس بگیرید</div>
-                        <button class="product-btn">جزئیات بیشتر</button>
+                    <h3>جک های هیدرولیک</h3>
+                    <p>جک های هیدرولیک و لوازم یدکی</p>
+                    <div class="product-features">
+                        <span>ظرفیت بالا</span>
+                        <span>ایمنی بالا</span>
                     </div>
+                    <button class="product-btn">جزئیات محصول</button>
                 </div>
-                <div class="product-card glass-card" data-category="sensors">
+                
+                <div class="product-card glass-card" data-category="mechanical">
                     <div class="product-image">
-                        <div class="product-3d-icon">
-                            <i class="fas fa-tachometer-alt"></i>
-                        </div>
+                        <i class="fas fa-link"></i>
                     </div>
-                    <div class="product-info">
-                        <h3 class="product-title">سنسور فشار</h3>
-                        <p class="product-description">اندازه‌گیری دقیق فشار در محیط‌های صنعتی</p>
-                        <div class="product-price">قیمت: تماس بگیرید</div>
-                        <button class="product-btn">جزئیات بیشتر</button>
+                    <h3>کوپلینگ های هیدرولیک</h3>
+                    <p>کوپلینگ ها و اتصالات هیدرولیک</p>
+                    <div class="product-features">
+                        <span>آب‌بندی عالی</span>
+                        <span>مقاوم در برابر فشار</span>
                     </div>
+                    <button class="product-btn">جزئیات محصول</button>
+                </div>
+                
+                <div class="product-card glass-card" data-category="mechanical">
+                    <div class="product-image">
+                        <i class="fas fa-thermometer-half"></i>
+                    </div>
+                    <h3>مبدل های حرارتی</h3>
+                    <p>مبدل های حرارتی تیوب و پلیت</p>
+                    <div class="product-features">
+                        <span>بازده حرارتی بالا</span>
+                        <span>مقاوم به خورندگی</span>
+                    </div>
+                    <button class="product-btn">جزئیات محصول</button>
+                </div>
+                
+                <div class="product-card glass-card" data-category="mechanical">
+                    <div class="product-image">
+                        <i class="fas fa-filter"></i>
+                    </div>
+                    <h3>فیلترهای هیدرولیک</h3>
+                    <p>فیلترهای صنعتی و تعویضی</p>
+                    <div class="product-features">
+                        <span>فیلتراسیون دقیق</span>
+                        <span>عمر مفید بالا</span>
+                    </div>
+                    <button class="product-btn">جزئیات محصول</button>
+                </div>
+                
+                <!-- تجهیزات برقی -->
+                <div class="product-card glass-card" data-category="electrical">
+                    <div class="product-image">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3>الکترو موتورها</h3>
+                    <p>انواع الکترو موتورهای صنعتی با کیفیت بین‌المللی</p>
+                    <div class="product-features">
+                        <span>راندمان بالا</span>
+                        <span>کم مصرف</span>
+                    </div>
+                    <button class="product-btn">جزئیات محصول</button>
+                </div>
+                
+                <div class="product-card glass-card" data-category="electrical">
+                    <div class="product-image">
+                        <i class="fas fa-power-off"></i>
+                    </div>
+                    <h3>کنتاکتورها</h3>
+                    <p>کنتاکتورهای برقی و تجهیزات کنترل</p>
+                    <div class="product-features">
+                        <span>قابلیت اطمینان بالا</span>
+                        <span>عمر طولانی</span>
+                    </div>
+                    <button class="product-btn">جزئیات محصول</button>
+                </div>
+                
+                <div class="product-card glass-card" data-category="electrical">
+                    <div class="product-image">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>کارت های الکترونیکی</h3>
+                    <p>کارت‌های الکترونیکی و مدارات کنترل</p>
+                    <div class="product-features">
+                        <span>تکنولوژی روز</span>
+                        <span>دقت بالا</span>
+                    </div>
+                    <button class="product-btn">جزئیات محصول</button>
+                </div>
+                
+                <div class="product-card glass-card" data-category="electrical">
+                    <div class="product-image">
+                        <i class="fas fa-wave-square"></i>
+                    </div>
+                    <h3>ویبرومترها</h3>
+                    <p>دستگاه‌های اندازه‌گیری ارتعاش</p>
+                    <div class="product-features">
+                        <span>دقت اندازه‌گیری بالا</span>
+                        <span>قابل حمل</span>
+                    </div>
+                    <button class="product-btn">جزئیات محصول</button>
+                </div>
+                
+                <div class="product-card glass-card" data-category="electrical">
+                    <div class="product-image">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <h3>سنسورهای صنعتی</h3>
+                    <p>انواع سنسورهای دما، فشار، جریان</p>
+                    <div class="product-features">
+                        <span>حساسیت بالا</span>
+                        <span>مقاوم در محیط</span>
+                    </div>
+                    <button class="product-btn">جزئیات محصول</button>
+                </div>
+                
+                <div class="product-card glass-card" data-category="electrical">
+                    <div class="product-image">
+                        <i class="fas fa-battery-full"></i>
+                    </div>
+                    <h3>منابع تغذیه</h3>
+                    <p>منابع تغذیه صنعتی و UPS</p>
+                    <div class="product-features">
+                        <span>پایدار</span>
+                        <span>محافظت کامل</span>
+                    </div>
+                    <button class="product-btn">جزئیات محصول</button>
+                </div>
+                
+                <div class="product-card glass-card" data-category="electrical">
+                    <div class="product-image">
+                        <i class="fas fa-broadcast-tower"></i>
+                    </div>
+                    <h3>ترانسمیترها</h3>
+                    <p>ترانسمیترهای اندازه‌گیری و کنترل</p>
+                    <div class="product-features">
+                        <span>سیگنال پایدار</span>
+                        <span>دقت بالا</span>
+                    </div>
+                    <button class="product-btn">جزئیات محصول</button>
+                </div>
+                
+                <div class="product-card glass-card" data-category="electrical">
+                    <div class="product-image">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>چراغ های صنعتی</h3>
+                    <p>روشنایی صنعتی و چراغ‌های ویژه</p>
+                    <div class="product-features">
+                        <span>کم مصرف</span>
+                        <span>نور یکنواخت</span>
+                    </div>
+                    <button class="product-btn">جزئیات محصول</button>
+                </div>
+                
+                <!-- ابزار دقیق -->
+                <div class="product-card glass-card" data-category="instruments">
+                    <div class="product-image">
+                        <i class="fas fa-thermometer"></i>
+                    </div>
+                    <h3>حرارت سنج های دیجیتال</h3>
+                    <p>دماسنج‌های دقیق برای کاربردهای صنعتی</p>
+                    <div class="product-features">
+                        <span>دقت ±0.1°C</span>
+                        <span>محدوده وسیع</span>
+                    </div>
+                    <button class="product-btn">جزئیات محصول</button>
+                </div>
+                
+                <div class="product-card glass-card" data-category="instruments">
+                    <div class="product-image">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>فشارسنج های دقیق</h3>
+                    <p>گیج فشار دیجیتال و آنالوگ</p>
+                    <div class="product-features">
+                        <span>دقت 0.1%</span>
+                        <span>مقاوم شوک</span>
+                    </div>
+                    <button class="product-btn">جزئیات محصول</button>
+                </div>
+                
+                <div class="product-card glass-card" data-category="instruments">
+                    <div class="product-image">
+                        <i class="fas fa-ruler-vertical"></i>
+                    </div>
+                    <h3>سطح سنج ها</h3>
+                    <p>اندازه‌گیری سطح مایعات و مواد جامد</p>
+                    <div class="product-features">
+                        <span>اندازه‌گیری از راه دور</span>
+                        <span>بدون تماس</span>
+                    </div>
+                    <button class="product-btn">جزئیات محصول</button>
+                </div>
+                
+                <div class="product-card glass-card" data-category="instruments">
+                    <div class="product-image">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3>شیرهای کنترلی</h3>
+                    <p>شیرهای کنترل جریان و فشار</p>
+                    <div class="product-features">
+                        <span>کنترل دقیق</span>
+                        <span>عمر بالا</span>
+                    </div>
+                    <button class="product-btn">جزئیات محصول</button>
+                </div>
+                
+                <div class="product-card glass-card" data-category="instruments">
+                    <div class="product-image">
+                        <i class="fas fa-weight"></i>
+                    </div>
+                    <h3>ترازوهای صنعتی</h3>
+                    <p>ترازوهای دقیق برای وزن‌کشی</p>
+                    <div class="product-features">
+                        <span>دقت بالا</span>
+                        <span>ظرفیت زیاد</span>
+                    </div>
+                    <button class="product-btn">جزئیات محصول</button>
+                </div>
+                
+                <div class="product-card glass-card" data-category="instruments">
+                    <div class="product-image">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>لنزهای بزرگنمایی</h3>
+                    <p>ابزار بازرسی و کنترل کیفیت</p>
+                    <div class="product-features">
+                        <span>بزرگنمایی بالا</span>
+                        <span>وضوح عالی</span>
+                    </div>
+                    <button class="product-btn">جزئیات محصول</button>
+                </div>
+                
+                <div class="product-card glass-card" data-category="instruments">
+                    <div class="product-image">
+                        <i class="fas fa-crosshairs"></i>
+                    </div>
+                    <h3>لیزرمترها</h3>
+                    <p>اندازه‌گیری دقیق فاصله با لیزر</p>
+                    <div class="product-features">
+                        <span>سرعت بالا</span>
+                        <span>دقت میکرونی</span>
+                    </div>
+                    <button class="product-btn">جزئیات محصول</button>
+                </div>
+                
+                <div class="product-card glass-card" data-category="instruments">
+                    <div class="product-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>رکوردرهای داده</h3>
+                    <p>ثبت و نمایش داده‌های صنعتی</p>
+                    <div class="product-features">
+                        <span>ذخیره بلندمدت</span>
+                        <span>تحلیل آماری</span>
+                    </div>
+                    <button class="product-btn">جزئیات محصول</button>
+                </div>
+                
+                <!-- تجهیزات آزمایشگاهی -->
+                <div class="product-card glass-card" data-category="laboratory">
+                    <div class="product-image">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>اسپکتروفتومتر</h3>
+                    <p>تجزیه طیفی مواد با دقت بالا</p>
+                    <div class="product-features">
+                        <span>UV-VIS</span>
+                        <span>دقت طیفی بالا</span>
+                    </div>
+                    <button class="product-btn">جزئیات محصول</button>
+                </div>
+                
+                <div class="product-card glass-card" data-category="laboratory">
+                    <div class="product-image">
+                        <i class="fas fa-vial"></i>
+                    </div>
+                    <h3>کدورت سنج</h3>
+                    <p>اندازه‌گیری کدورت آب و مایعات</p>
+                    <div class="product-features">
+                        <span>استاندارد ISO</span>
+                        <span>کالیبراسیون آسان</span>
+                    </div>
+                    <button class="product-btn">جزئیات محصول</button>
+                </div>
+                
+                <div class="product-card glass-card" data-category="laboratory">
+                    <div class="product-image">
+                        <i class="fas fa-flask-vial"></i>
+                    </div>
+                    <h3>BOD متر</h3>
+                    <p>اندازه‌گیری نیاز بیوشیمیایی اکسیژن</p>
+                    <div class="product-features">
+                        <span>5 روزه</span>
+                        <span>دقت تحلیلی</span>
+                    </div>
+                    <button class="product-btn">جزئیات محصول</button>
+                </div>
+                
+                <div class="product-card glass-card" data-category="laboratory">
+                    <div class="product-image">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>راکتور COD</h3>
+                    <p>هضم نمونه برای تعیین COD</p>
+                    <div class="product-features">
+                        <span>دمای ثابت</span>
+                        <span>کنترل زمان</span>
+                    </div>
+                    <button class="product-btn">جزئیات محصول</button>
+                </div>
+                
+                <div class="product-card glass-card" data-category="laboratory">
+                    <div class="product-image">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>pH متر دیجیتال</h3>
+                    <p>اندازه‌گیری دقیق pH و ORP</p>
+                    <div class="product-features">
+                        <span>کالیبراسیون خودکار</span>
+                        <span>دقت ±0.01</span>
+                    </div>
+                    <button class="product-btn">جزئیات محصول</button>
+                </div>
+                
+                <div class="product-card glass-card" data-category="laboratory">
+                    <div class="product-image">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>EC متر</h3>
+                    <p>هدایت الکتریکی و TDS</p>
+                    <div class="product-features">
+                        <span>جبران دما</span>
+                        <span>محدوده وسیع</span>
+                    </div>
+                    <button class="product-btn">جزئیات محصول</button>
+                </div>
+                
+                <div class="product-card glass-card" data-category="laboratory">
+                    <div class="product-image">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>میکروسکوپ دیجیتال</h3>
+                    <p>بررسی و تصویربرداری نمونه‌ها</p>
+                    <div class="product-features">
+                        <span>بزرگنمایی 1000x</span>
+                        <span>کیفیت تصویر HD</span>
+                    </div>
+                    <button class="product-btn">جزئیات محصول</button>
+                </div>
+                
+                <div class="product-card glass-card" data-category="laboratory">
+                    <div class="product-image">
+                        <i class="fas fa-fire-flame-curved"></i>
+                    </div>
+                    <h3>کوره آزمایشگاهی</h3>
+                    <p>گرمایش و کلسیناسیون نمونه‌ها</p>
+                    <div class="product-features">
+                        <span>دمای 1200°C</span>
+                        <span>کنترل دقیق</span>
+                    </div>
+                    <button class="product-btn">جزئیات محصول</button>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services-section">
+    <section id="services" class="services">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">خدمات ما</h2>
-                <p class="section-subtitle">طیف گسترده‌ای از خدمات تخصصی</p>
+                <p class="section-subtitle">خدمات کامل از طراحی تا اجرا و پشتیبانی</p>
             </div>
-            <div class="services-grid">
-                <div class="service-card glass-card">
-                    <div class="service-icon">
+            
+            <div class="services-detailed">
+                <div class="service-detail glass-card">
+                    <div class="service-header">
                         <i class="fas fa-tools"></i>
+                        <h3>خدمات پس از فروش</h3>
                     </div>
-                    <h3 class="service-title">نصب و راه‌اندازی</h3>
-                    <p class="service-description">نصب تخصصی تجهیزات با کیفیت بالا</p>
-                    <ul class="service-features">
-                        <li>بازدید رایگان</li>
-                        <li>طراحی سیستم</li>
-                        <li>نصب و تست</li>
-                        <li>آموزش کاربری</li>
-                    </ul>
-                </div>
-                <div class="service-card glass-card">
-                    <div class="service-icon">
-                        <i class="fas fa-wrench"></i>
-                    </div>
-                    <h3 class="service-title">تعمیر و نگهداری</h3>
-                    <p class="service-description">خدمات تعمیر و نگهداری تخصصی</p>
-                    <ul class="service-features">
-                        <li>تعمیر اورژانسی</li>
+                    <p>نصب، راه‌اندازی، تعمیرات و نگهداری تجهیزات</p>
+                    <ul>
+                        <li>نصب و راه‌اندازی در محل</li>
+                        <li>تعمیرات تخصصی</li>
                         <li>نگهداری دوره‌ای</li>
-                        <li>تعویض قطعات</li>
-                        <li>بهینه‌سازی سیستم</li>
+                        <li>پشتیبانی 24 ساعته</li>
                     </ul>
                 </div>
-                <div class="service-card glass-card">
-                    <div class="service-icon">
-                        <i class="fas fa-user-tie"></i>
+                
+                <div class="service-detail glass-card">
+                    <div class="service-header">
+                        <i class="fas fa-shipping-fast"></i>
+                        <h3>واردات و صادرات</h3>
                     </div>
-                    <h3 class="service-title">مشاوره تخصصی</h3>
-                    <p class="service-description">مشاوره در انتخاب بهترین راه‌حل</p>
-                    <ul class="service-features">
-                        <li>تحلیل نیاز</li>
-                        <li>طراحی سیستم</li>
-                        <li>انتخاب تجهیزات</li>
-                        <li>محاسبه هزینه</li>
+                    <p>تأمین کالاهای بازرگانی و انتقال تکنولوژی</p>
+                    <ul>
+                        <li>واردات تجهیزات</li>
+                        <li>ترخیص گمرکی</li>
+                        <li>انتقال تکنولوژی</li>
+                        <li>اعتبارات ارزی</li>
+                    </ul>
+                </div>
+                
+                <div class="service-detail glass-card">
+                    <div class="service-header">
+                        <i class="fas fa-drafting-compass"></i>
+                        <h3>مهندسی و طراحی</h3>
+                    </div>
+                    <p>طراحی، محاسبه و مشاوره فنی</p>
+                    <ul>
+                        <li>طراحی سیستم‌ها</li>
+                        <li>محاسبات مهندسی</li>
+                        <li>مشاوره تخصصی</li>
+                        <li>نظارت بر اجرا</li>
+                    </ul>
+                </div>
+                
+                <div class="service-detail glass-card">
+                    <div class="service-header">
+                        <i class="fas fa-handshake"></i>
+                        <h3>مناقصات و پیمان‌ها</h3>
+                    </div>
+                    <p>شرکت در مناقصات دولتی و خصوصی</p>
+                    <ul>
+                        <li>مناقصات دولتی</li>
+                        <li>پیمان‌های خصوصی</li>
+                        <li>مزایدات</li>
+                        <li>قراردادهای EPC</li>
                     </ul>
                 </div>
             </div>
@@ -304,122 +722,145 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">تماس با ما</h2>
-                <p class="section-subtitle">آماده پاسخگویی و ارائه خدمات</p>
+                <p class="section-subtitle">برای مشاوره و دریافت قیمت با ما در تماس باشید</p>
             </div>
+            
             <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item glass-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <h3>تلفن تماس</h3>
-                        <p>021-12345678</p>
-                    </div>
-                    <div class="contact-item glass-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <h3>ایمیل</h3>
-                        <p>info@ariotajhizsanat.ir</p>
-                    </div>
-                    <div class="contact-item glass-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <h3>آدرس</h3>
-                        <p>تهران، خیابان ولیعصر</p>
-                    </div>
-                </div>
                 <div class="contact-form glass-card">
+                    <h3>فرم تماس</h3>
                     <form id="contactForm">
                         <div class="form-group">
-                            <input type="text" placeholder="نام و نام خانوادگی" required>
+                            <input type="text" name="name" placeholder="نام و نام خانوادگی" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="ایمیل" required>
+                            <input type="email" name="email" placeholder="ایمیل" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" placeholder="شماره تماس" required>
+                            <input type="tel" name="phone" placeholder="شماره تماس" required>
                         </div>
                         <div class="form-group">
-                            <select required>
-                                <option value="">موضوع پیام</option>
-                                <option value="product">سوال درباره محصولات</option>
-                                <option value="service">درخواست خدمات</option>
-                                <option value="support">پشتیبانی فنی</option>
+                            <select name="subject" required>
+                                <option value="">موضوع درخواست</option>
+                                <option value="mechanical">تجهیزات مکانیکی</option>
+                                <option value="electrical">تجهیزات برقی</option>
+                                <option value="instruments">ابزار دقیق</option>
+                                <option value="laboratory">تجهیزات آزمایشگاهی</option>
+                                <option value="service">خدمات پس از فروش</option>
                                 <option value="other">سایر</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="متن پیام" rows="5" required></textarea>
+                            <textarea name="message" rows="5" placeholder="پیام شما" required></textarea>
                         </div>
-                        <button type="submit" class="btn-3d primary">ارسال پیام</button>
+                        <button type="submit" class="submit-btn">ارسال پیام</button>
                     </form>
+                </div>
+                
+                <div class="contact-info glass-card">
+                    <h3>اطلاعات تماس</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>آدرس</h4>
+                            <p>تهران، خیابان کریمخان زند، پلاک 123</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>تلفن</h4>
+                            <p>021-88776655</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <div>
+                            <h4>همراه</h4>
+                            <p>0912-1234567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>ایمیل</h4>
+                            <p>info@ariotajhiz.ir</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <h4>وبسایت</h4>
+                            <p>www.ariotajhiz.ir</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer glass-footer">
+    <footer class="footer glass-card">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>آریوتک</h3>
-                    <p>شرکت پیشرو در ارائه خدمات هیز صنعتی با کیفیت بالا و قیمت مناسب</p>
+                    <h4>شرکت آریو تجهیز صنعت</h4>
+                    <p>تامین کننده ابزار دقیق، تجهیزات مکانیک، الکتریک، الکترونیک</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-telegram"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
+                
                 <div class="footer-section">
-                    <h4>لینک‌های سریع</h4>
+                    <h4>لینک های مفید</h4>
                     <ul>
                         <li><a href="#home">خانه</a></li>
                         <li><a href="#about">درباره ما</a></li>
                         <li><a href="#products">محصولات</a></li>
                         <li><a href="#services">خدمات</a></li>
+                        <li><a href="#contact">تماس</a></li>
                     </ul>
                 </div>
+                
                 <div class="footer-section">
                     <h4>محصولات</h4>
                     <ul>
-                        <li><a href="#">هیترهای صنعتی</a></li>
-                        <li><a href="#">سنسورها</a></li>
-                        <li><a href="#">کنترلرها</a></li>
-                        <li><a href="#">قطعات یدکی</a></li>
+                        <li><a href="#">تجهیزات مکانیکی</a></li>
+                        <li><a href="#">تجهیزات برقی</a></li>
+                        <li><a href="#">ابزار دقیق</a></li>
+                        <li><a href="#">تجهیزات آزمایشگاهی</a></li>
                     </ul>
                 </div>
+                
                 <div class="footer-section">
-                    <h4>تماس با ما</h4>
-                    <div class="contact-info-footer">
-                        <p><i class="fas fa-phone"></i> 021-12345678</p>
-                        <p><i class="fas fa-envelope"></i> info@ariotajhizsanat.ir</p>
-                        <p><i class="fas fa-map-marker-alt"></i> تهران، خیابان ولیعصر</p>
-                    </div>
+                    <h4>خدمات</h4>
+                    <ul>
+                        <li><a href="#">واردات و صادرات</a></li>
+                        <li><a href="#">طراحی و مهندسی</a></li>
+                        <li><a href="#">نصب و راه‌اندازی</a></li>
+                        <li><a href="#">خدمات پس از فروش</a></li>
+                    </ul>
                 </div>
             </div>
+            
             <div class="footer-bottom">
-                <p>&copy; 2024 آریوتک. تمام حقوق محفوظ است.</p>
+                <p>&copy; 1403 شرکت سهامی خاص آریو تجهیز صنعت. تمامی حقوق محفوظ است.</p>
             </div>
         </div>
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="backToTop" class="back-to-top">
+    <button class="back-to-top glass-card" id="backToTop">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- Particle Background -->
-    <div id="particles-js"></div>
-
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>
