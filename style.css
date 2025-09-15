@@ -233,7 +233,7 @@ body {
     font-size: 3.8rem;
     font-weight: 800;
     margin-bottom: 25px;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     background: linear-gradient(135deg, #FF69B4, #87CEEB, #DDA0DD, #98FB98, #F0E68C);
     background-size: 300% 300%;
     -webkit-background-clip: text;
