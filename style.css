@@ -474,7 +474,7 @@ body {
 /* About Section */
 .about {
     padding: 100px 0;
-    background: linear-gradient(135deg, #F0FFE4 0%, #E4F0FF 50%, #FFE4F0 100%);
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
 }
 
 .section-header {
@@ -669,7 +669,7 @@ body {
 /* Products Section */
 .products {
     padding: 100px 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #F5FFE4 0%, #E4FFEF 50%, #E4F5FF 100%);
 }
 
 .product-filters {
