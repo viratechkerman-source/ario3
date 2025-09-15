@@ -175,7 +175,7 @@ body {
     font-weight: 700;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background: linear-gradient(45deg, #FF80CC, #80CCFF, #CCFF80);
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
     background-size: 200% 200%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -378,7 +378,7 @@ body {
 
 /* CTA Button */
 .cta-btn {
-    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    background: linear-gradient(45deg, #FF99DD, #99DDFF);
     color: #fff;
     padding: 15px 40px;
     border: none;
