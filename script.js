@@ -487,27 +487,47 @@ document.head.appendChild(style);
 // Initialize particles
 document.addEventListener('DOMContentLoaded', createParticles);
 
-// Voice controls removed as requested
-
-// Theme Switcher
-function initializeThemeSwitcher() {
-    const themes = [
-        'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-        'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-        'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
-        'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
-        'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
-    ];
+// Voice Commands (Persian)
+if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    const recognition = new SpeechRecognition();
     
-    let currentTheme = 0;
+    recognition.lang = 'fa-IR';
+    recognition.continuous = false;
+    recognition.interimResults = false;
     
-    const themeBtn = document.createElement('button');
-    themeBtn.innerHTML = '<i class="fas fa-palette"></i>';
-    themeBtn.className = 'theme-btn glass-card';
-    themeBtn.style.cssText = `
+    // Voice commands mapping
+    const voiceCommands = {
+        'خانه': '#home',
+        'درباره ما': '#about', 
+        'محصولات': '#products',
+        'خدمات': '#services',
+        'تماس': '#contact',
+        'برو بالا': 'top'
+    };
+    
+    recognition.onresult = (event) => {
+        const command = event.results[0][0].transcript.trim();
+        console.log('Voice command:', command);
+        
+        if (voiceCommands[command]) {
+            if (voiceCommands[command] === 'top') {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            } else {
+                document.querySelector(voiceCommands[command])?.scrollIntoView({ behavior: 'smooth' });
+            }
+            showNotification(`دستور "${command}" اجرا شد`, 'success');
+        }
+    };
+    
+    // Add voice control button
+    const voiceBtn = document.createElement('button');
+    voiceBtn.innerHTML = '<i class="fas fa-microphone"></i>';
+    voiceBtn.className = 'voice-btn glass-card';
+    voiceBtn.style.cssText = `
         position: fixed;
         bottom: 30px;
-        right: 150px;
+        right: 90px;
         width: 50px;
         height: 50px;
         border: none;
@@ -519,27 +539,18 @@ function initializeThemeSwitcher() {
         transition: all 0.3s ease;
     `;
     
-    themeBtn.addEventListener('click', () => {
-        currentTheme = (currentTheme + 1) % themes.length;
-        document.body.style.background = themes[currentTheme];
-        
-        // Update section backgrounds
-        document.querySelectorAll('section').forEach((section, index) => {
-            if (index % 2 === 0) {
-                section.style.background = themes[currentTheme];
-            } else {
-                section.style.background = themes[(currentTheme + 1) % themes.length];
-            }
-        });
-        
-        showNotification('تم تغییر کرد!', 'success');
+    voiceBtn.addEventListener('click', () => {
+        recognition.start();
+        voiceBtn.style.background = 'linear-gradient(45deg, #ff4757, #2ed573)';
+        setTimeout(() => {
+            voiceBtn.style.background = 'linear-gradient(45deg, #ff6b6b, #4ecdc4)';
+        }, 3000);
     });
     
-    document.body.appendChild(themeBtn);
+    document.body.appendChild(voiceBtn);
 }
 
-// Initialize theme switcher
-document.addEventListener('DOMContentLoaded', initializeThemeSwitcher);
+// Theme switcher removed as requested
 
 // Product Detail Modal
 function createProductModal() {
