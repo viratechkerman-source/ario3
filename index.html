@@ -33,99 +33,127 @@
         </div>
     </nav>
 
-    <!-- Hero Section with Premium Slider -->
+    <!-- Hero Section with Enhanced Slider -->
     <section id="home" class="hero">
         <div class="hero-slider">
-            <div class="slide active slide-1">
+            <div class="slide active" style="background: linear-gradient(135deg, rgba(255, 179, 230, 0.4), rgba(179, 230, 255, 0.4));">
                 <div class="slide-content">
                     <div class="floating-shapes">
                         <div class="shape-3d cube"></div>
                         <div class="shape-3d sphere"></div>
                         <div class="shape-3d pyramid"></div>
                     </div>
-                    <div class="hero-text-container">
-                        <h1 class="hero-title animated-title">شرکت سهامی خاص آریو تجهیز صنعت</h1>
-                        <p class="hero-subtitle">تامین کننده ابزار دقیق، تجهیزات مکانیک، الکتریک، الکترونیک</p>
-                        <div class="hero-stats glass-card">
-                            <div class="stat">
-                                <span class="stat-number counter" data-count="1399">0</span>
-                                <span class="stat-label">سال تأسیس</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number counter" data-count="500">0</span>
-                                <span class="stat-label">پروژه موفق</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number counter" data-count="50">0</span>
-                                <span class="stat-label">شرکت همکار</span>
-                            </div>
+                    <div class="hero-badge">
+                        <span>تأسیس 1399</span>
+                    </div>
+                    <h1 class="hero-title">شرکت سهامی خاص آریو تجهیز صنعت</h1>
+                    <p class="hero-subtitle">تامین کننده ابزار دقیق، تجهیزات مکانیک، الکتریک، الکترونیک</p>
+                    <div class="hero-stats glass-card">
+                        <div class="stat">
+                            <span class="stat-number">1399</span>
+                            <span class="stat-label">سال تأسیس</span>
                         </div>
-                        <div class="hero-buttons">
-                            <button class="cta-btn primary" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">مشاهده محصولات</button>
-                            <button class="cta-btn secondary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">تماس با ما</button>
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">پروژه موفق</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">شرکت همکار</span>
                         </div>
                     </div>
+                    <button class="cta-btn" onclick="scrollToSection('products')">
+                        <span>مشاهده محصولات</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
                 </div>
             </div>
             
-            <div class="slide slide-2">
+            <div class="slide" style="background: linear-gradient(135deg, rgba(179, 255, 179, 0.4), rgba(255, 230, 179, 0.4));">
                 <div class="slide-content">
                     <div class="floating-shapes">
                         <div class="shape-3d gear rotating"></div>
                         <div class="shape-3d cylinder"></div>
-                        <div class="shape-3d hexagon"></div>
                     </div>
-                    <h1 class="hero-title">همکاری با بزرگترین شرکت‌ها</h1>
+                    <div class="hero-badge">
+                        <span>همکاری برتر</span>
+                    </div>
+                    <h1 class="hero-title">همکاری با بزرگترین شرکت‌های کشور</h1>
                     <p class="hero-subtitle">افتخار همکاری با فولاد زرند ایرانیان، فولاد سیرجان، شرکت ذغالسنگ و ملی صنایع مس</p>
-                    <div class="partner-showcase glass-card">
+                    <div class="partner-logos glass-card">
                         <div class="partner-item">
-                            <i class="fas fa-industry"></i>
+                            <div class="partner-icon">
+                                <i class="fas fa-industry"></i>
+                            </div>
                             <span>فولاد زرند ایرانیان</span>
                         </div>
                         <div class="partner-item">
-                            <i class="fas fa-fire"></i>
+                            <div class="partner-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
                             <span>فولاد سیرجان</span>
                         </div>
                         <div class="partner-item">
-                            <i class="fas fa-mountain"></i>
+                            <div class="partner-icon">
+                                <i class="fas fa-mountain"></i>
+                            </div>
                             <span>شرکت ذغالسنگ</span>
                         </div>
                         <div class="partner-item">
-                            <i class="fas fa-gem"></i>
+                            <div class="partner-icon">
+                                <i class="fas fa-gem"></i>
+                            </div>
                             <span>ملی صنایع مس</span>
                         </div>
                     </div>
-                    <button class="cta-btn primary" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">درباره ما</button>
+                    <button class="cta-btn" onclick="scrollToSection('about')">
+                        <span>درباره ما</span>
+                        <i class="fas fa-info-circle"></i>
+                    </button>
                 </div>
             </div>
             
-            <div class="slide slide-3">
+            <div class="slide" style="background: linear-gradient(135deg, rgba(255, 204, 179, 0.4), rgba(179, 255, 204, 0.4));">
                 <div class="slide-content">
                     <div class="floating-shapes">
+                        <div class="shape-3d hexagon"></div>
                         <div class="shape-3d torus"></div>
-                        <div class="shape-3d diamond"></div>
                     </div>
-                    <h1 class="hero-title">خدمات تخصصی و کامل</h1>
+                    <div class="hero-badge">
+                        <span>خدمات کامل</span>
+                    </div>
+                    <h1 class="hero-title">خدمات تخصصی و جامع</h1>
                     <p class="hero-subtitle">از طراحی تا اجرا، از واردات تا خدمات پس از فروش</p>
                     <div class="services-preview glass-card">
                         <div class="service-item">
-                            <i class="fas fa-cogs"></i>
+                            <div class="service-icon-mini">
+                                <i class="fas fa-cogs"></i>
+                            </div>
                             <span>طراحی و مهندسی</span>
                         </div>
                         <div class="service-item">
-                            <i class="fas fa-shipping-fast"></i>
+                            <div class="service-icon-mini">
+                                <i class="fas fa-shipping-fast"></i>
+                            </div>
                             <span>واردات و صادرات</span>
                         </div>
                         <div class="service-item">
-                            <i class="fas fa-tools"></i>
+                            <div class="service-icon-mini">
+                                <i class="fas fa-tools"></i>
+                            </div>
                             <span>نصب و راه‌اندازی</span>
                         </div>
                         <div class="service-item">
-                            <i class="fas fa-headset"></i>
+                            <div class="service-icon-mini">
+                                <i class="fas fa-headset"></i>
+                            </div>
                             <span>پشتیبانی 24/7</span>
                         </div>
                     </div>
-                    <button class="cta-btn primary" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">مشاهده خدمات</button>
+                    <button class="cta-btn" onclick="scrollToSection('contact')">
+                        <span>تماس با ما</span>
+                        <i class="fas fa-phone"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -135,21 +163,24 @@
             <button class="slider-btn prev-btn" onclick="previousSlide()">
                 <i class="fas fa-chevron-right"></i>
             </button>
+            <div class="slider-info">
+                <div class="current-slide">01</div>
+                <div class="slide-divider">/</div>
+                <div class="total-slides">03</div>
+            </div>
             <button class="slider-btn next-btn" onclick="nextSlide()">
                 <i class="fas fa-chevron-left"></i>
             </button>
         </div>
         
-        <div class="slider-indicators">
-            <span class="indicator active" onclick="currentSlide(1)">
-                <span class="indicator-text">شرکت ما</span>
-            </span>
-            <span class="indicator" onclick="currentSlide(2)">
-                <span class="indicator-text">همکاران</span>
-            </span>
-            <span class="indicator" onclick="currentSlide(3)">
-                <span class="indicator-text">خدمات</span>
-            </span>
+        <div class="slider-progress">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(1)" data-title="شرکت آریو تجهیز"></span>
+            <span class="dot" onclick="currentSlide(2)" data-title="همکاری با شرکت‌ها"></span>
+            <span class="dot" onclick="currentSlide(3)" data-title="خدمات تخصصی"></span>
         </div>
     </section>
 
@@ -157,6 +188,7 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
+                <div class="section-number">01</div>
                 <h2 class="section-title">درباره شرکت آریو تجهیز صنعت</h2>
                 <p class="section-subtitle">تخصص، تجربه و اعتماد در خدمت صنعت کشور</p>
             </div>
@@ -167,42 +199,35 @@
                         شرکت آریوتجهیز صنعت در سال 1399 با کادری مجرب و جوان به صورت تخصصی در زمینه کلیه امور بازرگانی اعم از خرید و فروش، واردات و صادرات کلیه کالاهای مجاز بازرگانی و انتقال تکنولوژی از خارج به داخل کشور، ترخیص کالا از گمرک داخلی و بین المللی، گشایش اعتبارات بانکی به صورت ارزی و ریالی از کلیه بانک‌ها، موسسات داخلی و خارجی، اخذ و اعطای نمایندگی های مجاز بازرگانی و برگزاری و شرکت در نمایشگاهای داخلی و خارجی، شرکت در کلیه مناقصات پیمانها و مزایدات دولتی و خصوصی اعم از داخلی و خارجی، طراحی، محاسبه، تهیه و تامین، ساخت و اجرا و خدمات فنی، مشاوره و نظارت بر کلیه کارهای ساختمانی، صنعتی، تاسیساتی، تاسیسات برقی، مکانیکی، ابزار دقیق و تجهیزاتی اعم از ابنیه، راه و باند و راه آهن، فرودگاه، خطوط انتقال، سدسازی، آبخیز داری، عملیات خاکی، سازه های فولادی و صنعتی، پروژه های نفت و گاز و پتروشیمی، سازه های بتنی سنگین، نقشه برداری و آزمایشگاه خاک و بتن، کانال، پل، تونل و اسکله، تاسیسات بندری، آب و فاضلاب، خطوط لوله گازرسانی و افزودنی های بتنی و صنعتی، تولید مصالح ساختمانی، ساخت قطعات پیش ساخته، کنترل پروژه و برنامه ریزی، مدیریت پیمان، تهیه، حمل و نصب و تعمیر و نگهداری کلیه تجهیزات مکانیکا و الکتریکا و ماشین آلات ساختمانی و صنعتی، حمل و نقل درون شهری، تهیه و تعمیرات سخت افزاری و نرم افزاری رایانه ای فعالیت خود را آغاز کرد.
                     </p>
                     
-                    <div class="company-specialties glass-card">
+                    <div class="company-detailed-info glass-card">
                         <h4>حوزه فعالیت‌های تخصصی شرکت:</h4>
-                        <div class="specialty-grid">
-                            <div class="specialty-item">
-                                <i class="fas fa-industry"></i>
-                                <h5>صنایع نفت، گاز و پتروشیمی</h5>
+                        <div class="activity-sectors">
+                            <div class="sector">
+                                <h5><i class="fas fa-industry"></i> صنایع نفت، گاز و پتروشیمی</h5>
                                 <ul>
                                     <li>طراحی و اجرای خطوط لوله</li>
                                     <li>تجهیزات پالایشگاهی</li>
                                     <li>سیستم‌های کنترل فرآیند</li>
                                 </ul>
                             </div>
-                            
-                            <div class="specialty-item">
-                                <i class="fas fa-building"></i>
-                                <h5>صنایع فولاد و معدن</h5>
+                            <div class="sector">
+                                <h5><i class="fas fa-building"></i> صنایع فولاد و معدن</h5>
                                 <ul>
                                     <li>تجهیزات کوره‌های صنعتی</li>
                                     <li>سیستم‌های حمل مواد</li>
                                     <li>ابزارهای استخراج</li>
                                 </ul>
                             </div>
-                            
-                            <div class="specialty-item">
-                                <i class="fas fa-bolt"></i>
-                                <h5>صنایع برق و انرژی</h5>
+                            <div class="sector">
+                                <h5><i class="fas fa-bolt"></i> صنایع برق و انرژی</h5>
                                 <ul>
                                     <li>تجهیزات نیروگاهی</li>
                                     <li>خطوط انتقال</li>
                                     <li>سیستم‌های کنترل توان</li>
                                 </ul>
                             </div>
-                            
-                            <div class="specialty-item">
-                                <i class="fas fa-tint"></i>
-                                <h5>صنایع آب و فاضلاب</h5>
+                            <div class="sector">
+                                <h5><i class="fas fa-tint"></i> صنایع آب و فاضلاب</h5>
                                 <ul>
                                     <li>تصفیه خانه‌های آب</li>
                                     <li>سیستم‌های پمپاژ</li>
@@ -212,7 +237,7 @@
                         </div>
                     </div>
                     
-                    <div class="company-features">
+                    <div class="about-features">
                         <div class="feature-item">
                             <i class="fas fa-award"></i>
                             <span>تجربه بیش از 4 سال</span>
@@ -231,6 +256,40 @@
                         </div>
                     </div>
                 </div>
+                
+                <div class="services-grid">
+                    <div class="service-card glass-card">
+                        <div class="service-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>تجهیزات مکانیکی</h3>
+                        <p>بیرینگ‌ها، پمپ‌های هیدرولیک، جک‌های هیدرولیکی، مبدل‌های حرارتی و کوپلینگ‌ها</p>
+                    </div>
+                    
+                    <div class="service-card glass-card">
+                        <div class="service-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>تجهیزات برقی</h3>
+                        <p>الکترو موتورها، کنتاکتورها، کارت‌های الکترونیکی، ویبرومتر و سنسورها</p>
+                    </div>
+                    
+                    <div class="service-card glass-card">
+                        <div class="service-icon">
+                            <i class="fas fa-ruler-combined"></i>
+                        </div>
+                        <h3>ابزار دقیق</h3>
+                        <p>حرارت‌سنج‌ها، فشارسنج‌ها، سطح‌سنج‌ها، شیرهای کنترلی و ترانسمیترها</p>
+                    </div>
+                    
+                    <div class="service-card glass-card">
+                        <div class="service-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3>تجهیزات آزمایشگاهی</h3>
+                        <p>اسپکتروفتومتر، کدورت‌سنج، BOD متر، راکتور COD، pH متر و EC متر</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -239,8 +298,9 @@
     <section id="products" class="products">
         <div class="container">
             <div class="section-header">
+                <div class="section-number">02</div>
                 <h2 class="section-title">محصولات ما</h2>
-                <p class="section-subtitle">محصولات با کیفیت برای صنایع مختلف</p>
+                <p class="section-subtitle">محصولاتی که شرکت آریو تجهیز صنعت ارائه می‌دهد</p>
             </div>
             
             <!-- Product Filters -->
@@ -252,9 +312,9 @@
                 <button class="filter-btn" data-filter="laboratory">تجهیزات آزمایشگاهی</button>
             </div>
             
-            <!-- Products Grid -->
+            <!-- Products Grid - Only the exact products you provided -->
             <div class="products-grid" id="products-grid">
-                <!-- Mechanical Products -->
+                <!-- تجهیزات مکانیکی -->
                 <div class="product-card glass-card" data-category="mechanical">
                     <div class="product-image">
                         <i class="fas fa-circle-dot"></i>
@@ -359,7 +419,7 @@
                     <button class="product-btn">جزئیات محصول</button>
                 </div>
                 
-                <!-- Electrical Products -->
+                <!-- محصولات برقی -->
                 <div class="product-card glass-card" data-category="electrical">
                     <div class="product-image">
                         <i class="fas fa-plug"></i>
@@ -416,7 +476,7 @@
                     <div class="product-image">
                         <i class="fas fa-satellite-dish"></i>
                     </div>
-                    <h3>سنسورهای صنعتی</h3>
+                    <h3>سنسورها</h3>
                     <p>انواع سنسورهای دما، فشار، جریان</p>
                     <div class="product-features">
                         <span>حساسیت بالا</span>
@@ -425,12 +485,12 @@
                     <button class="product-btn">جزئیات محصول</button>
                 </div>
                 
-                <!-- Precision Instruments -->
+                <!-- ابزار دقیق -->
                 <div class="product-card glass-card" data-category="instruments">
                     <div class="product-image">
                         <i class="fas fa-thermometer"></i>
                     </div>
-                    <h3>حرارت سنج های دیجیتال</h3>
+                    <h3>حرارت سنج ها</h3>
                     <p>دماسنج‌های دقیق برای کاربردهای صنعتی</p>
                     <div class="product-features">
                         <span>دقت ±0.1°C</span>
@@ -443,7 +503,7 @@
                     <div class="product-image">
                         <i class="fas fa-tachometer-alt"></i>
                     </div>
-                    <h3>فشارسنج های دقیق</h3>
+                    <h3>فشارسنج ها</h3>
                     <p>گیج فشار دیجیتال و آنالوگ</p>
                     <div class="product-features">
                         <span>دقت 0.1%</span>
@@ -478,7 +538,20 @@
                     <button class="product-btn">جزئیات محصول</button>
                 </div>
                 
-                <!-- Laboratory Equipment -->
+                <div class="product-card glass-card" data-category="instruments">
+                    <div class="product-image">
+                        <i class="fas fa-broadcast-tower"></i>
+                    </div>
+                    <h3>ترانسمیترها</h3>
+                    <p>ترانسمیترهای اندازه‌گیری و کنترل</p>
+                    <div class="product-features">
+                        <span>سیگنال پایدار</span>
+                        <span>دقت بالا</span>
+                    </div>
+                    <button class="product-btn">جزئیات محصول</button>
+                </div>
+                
+                <!-- تجهیزات آزمایشگاهی -->
                 <div class="product-card glass-card" data-category="laboratory">
                     <div class="product-image">
                         <i class="fas fa-eye"></i>
@@ -535,7 +608,7 @@
                     <div class="product-image">
                         <i class="fas fa-balance-scale"></i>
                     </div>
-                    <h3>pH متر دیجیتال</h3>
+                    <h3>pH متر</h3>
                     <p>اندازه‌گیری دقیق pH و ORP</p>
                     <div class="product-features">
                         <span>کالیبراسیون خودکار</span>
@@ -564,41 +637,66 @@
     <section id="services" class="services">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">خدمات ما</h2>
-                <p class="section-subtitle">خدمات کامل از طراحی تا اجرا</p>
+                <div class="section-number">03</div>
+                <h2 class="section-title">خدمات پس از فروش</h2>
+                <p class="section-subtitle">نصب، راه‌اندازی، تعمیرات و نگهداری تجهیزات</p>
             </div>
             
-            <div class="services-grid">
-                <div class="service-card glass-card">
-                    <div class="service-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3>خدمات پس از فروش</h3>
-                    <p>نصب، راه‌اندازی، تعمیرات و نگهداری تجهیزات</p>
-                </div>
-                
-                <div class="service-card glass-card">
-                    <div class="service-icon">
-                        <i class="fas fa-shipping-fast"></i>
-                    </div>
-                    <h3>واردات و صادرات</h3>
-                    <p>تامین تجهیزات از بهترین برندهای جهانی</p>
-                </div>
-                
-                <div class="service-card glass-card">
-                    <div class="service-icon">
+            <div class="services-detailed">
+                <div class="service-detail glass-card">
+                    <div class="service-header">
                         <i class="fas fa-tools"></i>
+                        <h3>نصب و راه‌اندازی</h3>
                     </div>
-                    <h3>طراحی و اجرا</h3>
-                    <p>طراحی، محاسبه، ساخت و اجرای پروژه‌های صنعتی</p>
+                    <p>نصب حرفه‌ای و راه‌اندازی تخصصی تمام تجهیزات توسط تیم مجرب ما</p>
+                    <ul>
+                        <li>نصب تجهیزات مکانیکی</li>
+                        <li>راه‌اندازی سیستم‌های برقی</li>
+                        <li>کالیبراسیون ابزار دقیق</li>
+                        <li>تست و بررسی نهایی</li>
+                    </ul>
                 </div>
                 
-                <div class="service-card glass-card">
-                    <div class="service-icon">
-                        <i class="fas fa-handshake"></i>
+                <div class="service-detail glass-card">
+                    <div class="service-header">
+                        <i class="fas fa-wrench"></i>
+                        <h3>تعمیرات و نگهداری</h3>
                     </div>
-                    <h3>مشاوره فنی</h3>
-                    <p>ارائه مشاوره تخصصی در انتخاب و استفاده از تجهیزات</p>
+                    <p>خدمات تعمیر و نگهداری دوره‌ای برای حفظ کیفیت و عملکرد تجهیزات</p>
+                    <ul>
+                        <li>نگهداری پیشگیرانه</li>
+                        <li>تعمیرات اساسی</li>
+                        <li>تعویض قطعات فرسوده</li>
+                        <li>بهینه‌سازی عملکرد</li>
+                    </ul>
+                </div>
+                
+                <div class="service-detail glass-card">
+                    <div class="service-header">
+                        <i class="fas fa-headset"></i>
+                        <h3>پشتیبانی فنی</h3>
+                    </div>
+                    <p>پشتیبانی فنی 24 ساعته برای رفع مشکلات و راهنمایی مشتریان</p>
+                    <ul>
+                        <li>مشاوره فنی تلفنی</li>
+                        <li>راهنمایی از راه دور</li>
+                        <li>ارسال تکنسین در محل</li>
+                        <li>آموزش کاربران</li>
+                    </ul>
+                </div>
+                
+                <div class="service-detail glass-card">
+                    <div class="service-header">
+                        <i class="fas fa-certificate"></i>
+                        <h3>گارانتی و ضمانت</h3>
+                    </div>
+                    <p>گارانتی معتبر و خدمات پس از فروش برای تمام محصولات</p>
+                    <ul>
+                        <li>گارانتی رسمی محصولات</li>
+                        <li>ضمانت کیفیت کار</li>
+                        <li>قطعات یدکی اصل</li>
+                        <li>پیگیری مستمر</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -608,57 +706,12 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
+                <div class="section-number">04</div>
                 <h2 class="section-title">تماس با ما</h2>
                 <p class="section-subtitle">با ما در ارتباط باشید</p>
             </div>
             
             <div class="contact-content">
-                <div class="contact-info glass-card">
-                    <h3>اطلاعات تماس</h3>
-                    
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>تلفن تماس</h4>
-                            <p>091061618593</p>
-                            <p>0343247652-03432476351</p>
-                        </div>
-                    </div>
-                    
-                    <div class="info-item">
-                        <i class="fas fa-fax"></i>
-                        <div>
-                            <h4>فکس</h4>
-                            <p>03432473605</p>
-                        </div>
-                    </div>
-                    
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>پست الکترونیکی</h4>
-                            <p>info@ariotajhizsanat.ir</p>
-                            <p>ario.tajhizsanat@gmail.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="info-item">
-                        <i class="fas fa-globe"></i>
-                        <div>
-                            <h4>وبسایت</h4>
-                            <p>ariotajhizsanat.ir</p>
-                        </div>
-                    </div>
-                    
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>آدرس</h4>
-                            <p>کرمان، خیابان امام جمعه، خیابان نامدار محمدی غربی، پلاک 58</p>
-                        </div>
-                    </div>
-                </div>
-                
                 <div class="contact-form glass-card">
                     <h3>فرم تماس</h3>
                     <form>
@@ -673,18 +726,59 @@
                         </div>
                         <div class="form-group">
                             <select required>
-                                <option value="">موضوع پیام</option>
-                                <option value="products">سؤال درباره محصولات</option>
-                                <option value="services">درخواست خدمات</option>
-                                <option value="quote">درخواست قیمت</option>
-                                <option value="support">پشتیبانی فنی</option>
+                                <option value="">موضوع درخواست</option>
+                                <option value="products">استعلام محصولات</option>
+                                <option value="services">خدمات</option>
+                                <option value="support">پشتیبانی</option>
+                                <option value="other">سایر</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="متن پیام" rows="5" required></textarea>
+                            <textarea rows="5" placeholder="متن پیام شما"></textarea>
                         </div>
                         <button type="submit" class="submit-btn">ارسال پیام</button>
                     </form>
+                </div>
+                
+                <div class="contact-info glass-card">
+                    <h3>اطلاعات تماس</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>آدرس</h4>
+                            <p>کرمان، خیابان امام جمعه، خیابان نامدار محمدی غربی، پلاک 58</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>تلفن</h4>
+                            <p>091061618593</p>
+                            <p>0343247652-03432476351</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-fax"></i>
+                        <div>
+                            <h4>فکس</h4>
+                            <p>03432473605</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>ایمیل</h4>
+                            <p>info@ariotajhizsanat.ir</p>
+                            <p>ario.tajhizsanat@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <h4>وبسایت</h4>
+                            <p>ariotajhizsanat.ir</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -696,11 +790,16 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>شرکت آریو تجهیز صنعت</h4>
-                    <p>تامین کننده تجهیزات صنعتی با کیفیت برتر و خدمات پس از فروش عالی</p>
+                    <p>تامین کننده ابزار دقیق، تجهیزات مکانیک، الکتریک و الکترونیک با بیش از 4 سال تجربه در خدمت صنایع کشور.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
                 </div>
-                
                 <div class="footer-section">
-                    <h4>خدمات</h4>
+                    <h4>محصولات</h4>
                     <ul>
                         <li><a href="#products">تجهیزات مکانیکی</a></li>
                         <li><a href="#products">تجهیزات برقی</a></li>
@@ -708,25 +807,37 @@
                         <li><a href="#products">تجهیزات آزمایشگاهی</a></li>
                     </ul>
                 </div>
-                
                 <div class="footer-section">
-                    <h4>تماس سریع</h4>
-                    <p>تلفن: 091061618593</p>
-                    <p>ایمیل: info@ariotajhizsanat.ir</p>
+                    <h4>خدمات</h4>
+                    <ul>
+                        <li><a href="#services">نصب و راه‌اندازی</a></li>
+                        <li><a href="#services">تعمیرات و نگهداری</a></li>
+                        <li><a href="#services">پشتیبانی فنی</a></li>
+                        <li><a href="#services">مشاوره تخصصی</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>تماس با ما</h4>
+                    <ul>
+                        <li>کرمان، خ. امام جمعه، خ. نامدار محمدی غربی، پلاک 58</li>
+                        <li>091061618593</li>
+                        <li>info@ariotajhizsanat.ir</li>
+                        <li>ariotajhizsanat.ir</li>
+                    </ul>
                 </div>
             </div>
-            
             <div class="footer-bottom">
-                <p>&copy; 1403 شرکت سهامی خاص آریو تجهیز صنعت. تمامی حقوق محفوظ است.</p>
+                <p>&copy; 1403 شرکت آریو تجهیز صنعت. تمامی حقوق محفوظ است.</p>
             </div>
         </div>
     </footer>
 
     <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop">
+    <button class="back-to-top" id="back-to-top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
+    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>
