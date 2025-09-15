@@ -487,68 +487,7 @@ document.head.appendChild(style);
 // Initialize particles
 document.addEventListener('DOMContentLoaded', createParticles);
 
-// Voice Commands (Persian)
-if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
-    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-    const recognition = new SpeechRecognition();
-    
-    recognition.lang = 'fa-IR';
-    recognition.continuous = false;
-    recognition.interimResults = false;
-    
-    // Voice commands mapping
-    const voiceCommands = {
-        'خانه': '#home',
-        'درباره ما': '#about', 
-        'محصولات': '#products',
-        'خدمات': '#services',
-        'تماس': '#contact',
-        'برو بالا': 'top'
-    };
-    
-    recognition.onresult = (event) => {
-        const command = event.results[0][0].transcript.trim();
-        console.log('Voice command:', command);
-        
-        if (voiceCommands[command]) {
-            if (voiceCommands[command] === 'top') {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            } else {
-                document.querySelector(voiceCommands[command])?.scrollIntoView({ behavior: 'smooth' });
-            }
-            showNotification(`دستور "${command}" اجرا شد`, 'success');
-        }
-    };
-    
-    // Add voice control button
-    const voiceBtn = document.createElement('button');
-    voiceBtn.innerHTML = '<i class="fas fa-microphone"></i>';
-    voiceBtn.className = 'voice-btn glass-card';
-    voiceBtn.style.cssText = `
-        position: fixed;
-        bottom: 30px;
-        right: 90px;
-        width: 50px;
-        height: 50px;
-        border: none;
-        border-radius: 50%;
-        background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
-        color: white;
-        cursor: pointer;
-        z-index: 1000;
-        transition: all 0.3s ease;
-    `;
-    
-    voiceBtn.addEventListener('click', () => {
-        recognition.start();
-        voiceBtn.style.background = 'linear-gradient(45deg, #ff4757, #2ed573)';
-        setTimeout(() => {
-            voiceBtn.style.background = 'linear-gradient(45deg, #ff6b6b, #4ecdc4)';
-        }, 3000);
-    });
-    
-    document.body.appendChild(voiceBtn);
-}
+// Voice controls removed as requested
 
 // Theme Switcher
 function initializeThemeSwitcher() {
