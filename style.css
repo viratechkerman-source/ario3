@@ -587,6 +587,81 @@ body {
     line-height: 1.6;
 }
 
+/* Company Detailed Information */
+.company-detailed-info {
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.company-detailed-info h4 {
+    color: #4ecdc4;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.activity-sectors {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.sector {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.sector:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.sector h5 {
+    color: #ff6b6b;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sector h5 i {
+    font-size: 1.5rem;
+    color: #4ecdc4;
+}
+
+.sector ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sector ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    padding-right: 1.5rem;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.sector ul li::before {
+    content: "✦";
+    position: absolute;
+    right: 0;
+    color: #45b7d1;
+    font-size: 0.8rem;
+}
+
+.sector ul li:last-child {
+    border-bottom: none;
+}
+
 /* Products Section */
 .products {
     padding: 100px 0;
