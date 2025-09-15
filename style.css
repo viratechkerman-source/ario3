@@ -7,6 +7,31 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+/* Ultra Smooth Scrolling */
+* {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #FFB6C1, #87CEEB, #DDA0DD);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #FF69B4, #00BFFF, #BA55D3);
 }
 
 body {
