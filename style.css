@@ -64,13 +64,13 @@ body {
 }
 
 .logo-3d {
-    background: linear-gradient(45deg, #FFB3E6, #B3E6FF);
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
     border-radius: 12px;
     padding: 10px;
     margin-left: 10px;
     transform: rotateY(15deg);
     transition: transform 0.3s ease;
-    box-shadow: 0 4px 15px rgba(200, 150, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .logo-3d:hover {
@@ -175,7 +175,7 @@ body {
     font-weight: 700;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
+    background: linear-gradient(45deg, #FF80CC, #80CCFF, #CCFF80);
     background-size: 200% 200%;
     -webkit-background-clip: text;
     background-clip: text;
