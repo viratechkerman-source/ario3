@@ -64,13 +64,13 @@ body {
 }
 
 .logo-3d {
-    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    background: linear-gradient(45deg, #FFB3E6, #B3E6FF);
     border-radius: 12px;
     padding: 10px;
     margin-left: 10px;
     transform: rotateY(15deg);
     transition: transform 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(200, 150, 255, 0.3);
 }
 
 .logo-3d:hover {
