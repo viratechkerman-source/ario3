@@ -135,7 +135,7 @@ body {
     height: 100vh;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, #FFE4F5 0%, #E4F5FF 50%, #F5E4FF 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 .hero-slider {
@@ -474,7 +474,7 @@ body {
 /* About Section */
 .about {
     padding: 100px 0;
-    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    background: linear-gradient(135deg, #F0FFE4 0%, #E4F0FF 50%, #FFE4F0 100%);
 }
 
 .section-header {
