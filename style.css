@@ -35,20 +35,13 @@ body {
     }
 }
 
-/* Glassmorphism Base - Pastel Colors */
+/* Glassmorphism Base */
 .glass-card {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(25px);
-    border: 1px solid rgba(255, 182, 193, 0.3);
-    border-radius: 25px;
-    box-shadow: 0 12px 40px rgba(255, 182, 193, 0.15), inset 0 2px 20px rgba(255, 255, 255, 0.2);
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.glass-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 60px rgba(255, 182, 193, 0.25), inset 0 2px 30px rgba(255, 255, 255, 0.3);
-    border: 1px solid rgba(135, 206, 235, 0.4);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
 }
 
 .container {
@@ -159,7 +152,17 @@ body {
     height: 100vh;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #FFB6C1 0%, #87CEEB 25%, #DDA0DD 50%, #98FB98 75%, #F0E68C 100%);
+    background-size: 400% 400%;
+    animation: heroGradient 12s ease infinite;
+}
+
+@keyframes heroGradient {
+    0% { background-position: 0% 50%; }
+    25% { background-position: 100% 0%; }
+    50% { background-position: 100% 100%; }
+    75% { background-position: 0% 100%; }
+    100% { background-position: 0% 50%; }
 }
 
 .hero-slider {
